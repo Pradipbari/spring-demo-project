@@ -20,7 +20,7 @@ import com.spring_demo_project.service.CustomerService;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/customers")
+@RequestMapping("/customers"
 public class CustomerController {
 	private CustomerService customerService;
 
