@@ -2,6 +2,7 @@ services:
   app:
     build: .
     image: spring-demo-app
+    container_name: spring-demo-project-app
     ports:
       - "3002:3002"
     environment:
@@ -14,6 +15,7 @@ services:
 
   database:
     image: postgres:16
+    container_name: spring-demo-project-database
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: pass
